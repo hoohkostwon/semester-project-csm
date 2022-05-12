@@ -1,0 +1,393 @@
+/* CSS Reset */
+
+/*Reset box-sizing and remove padding and margin for all elements*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Correct the line height in all browser*/
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*Reapply the pointer cursor and underline for anchor tags*/
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*Remove list styles*/
+ul,
+li {
+    list-style: none;
+}
+
+/* Default setting */
+
+/* Import fonts */
+@font-face {
+    font-family: "flood-std";
+    src: url("https://use.typekit.net/af/6da923/000000000000000000012fc3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3");
+}
+
+@font-face {
+    font-family: "komet";
+    src: url("https://use.typekit.net/af/66c5aa/00000000000000007735a904/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3");
+}
+
+@font-face {
+    font-family: "plakato-inline-back-pro";
+    src: url("https://use.typekit.net/af/686f3f/00000000000000007735fbf8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3");
+}
+
+/* Default style for body, h1-h3, logo, a and slogan */
+body {
+    font-family: "komet", sans-serif;
+    color: #081E3B;
+    margin: 0 5% 3% 5%;
+}
+
+h1, 
+h2,
+h3,
+.logo,
+a {
+    font-family: "plakato-inline-back-pro", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #354463;
+    text-transform:capitalize
+}
+
+.header-slogan,
+.contact-slogan {
+    font-family: "flood-std", sans-serif; 
+    color: #C24533;
+    text-transform: uppercase;
+}
+
+/* Default footer */
+footer {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.footer-list li {
+    display: inline-flex;
+    font-size: 12px;
+    padding-left: 2%;
+}
+
+.footer-list li a {
+    font-family: "komet", sans-serif;
+}
+
+
+/* Mobile first design */
+
+/* Default style for body, h1-h3, logo, a and slogan */
+body {
+    font-size: 16px;
+}
+
+.logo,
+.header-slogan,
+.menu-list a {
+    text-shadow: 5px 5px 5px lightgray;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+.page-link1,
+.page-link2 {
+    font-size: 22px;
+    text-shadow: 5px 5px 5px lightgray;
+}
+
+.page-link2 {
+    color: #C24533;
+}
+
+.page-link1:hover,
+.page-link2:hover {
+    color: grey;
+}
+
+/* Style header*/
+.topnav {
+    display: grid;
+    flex-direction: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    background:white;
+}
+
+.logo-slogan {
+    grid-column: 1/2;
+}
+
+
+/* Hamburg menu */
+.hamb {
+    grid-column: 2/3;
+    cursor: pointer;
+}
+
+.hamb-line1,
+.hamb-line2,
+.hamb-line3 {
+    background: #354463;
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+.hamb-line1 {
+    height: 3px;
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.hamb-line2 {
+    height: 3px;
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.hamb-line3 {
+    height: 3px;
+    width: 20px;
+}
+
+/* Hamburg menu checked effect */
+#side-menu:checked ~ .hamb .hamb-line1 {
+    transform: rotate(45deg); 
+    width: 30px;
+    margin-bottom: -3px;
+}
+
+#side-menu:checked ~ .hamb .hamb-line2 {
+    transform: rotate(-45deg);
+    
+}
+
+#side-menu:checked ~ .hamb .hamb-line3 {
+    display: none;
+}
+
+#side-menu {
+    display: none;
+}
+
+/* Chekced effect of side menu */
+.menu-list {
+    display: none;
+}
+
+#side-menu:checked ~ .menu-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: fixed;
+    background-color: white;
+    width: 180px;
+    height: 100%;
+    margin-left: -1%;
+}
+
+.menu-list li {
+    overflow: hidden;
+    margin-bottom: 5%;
+  }
+
+.menu-list a:hover {
+    color: #C24533;
+}
+
+/* Contact section for mobile */
+
+.contact-slogan {
+    font-size: 44px;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.socialmedia * {
+    display: inline-block;
+    font-size: larger;
+    padding-right: 5px;
+}
+
+.socialmedia {
+    text-align: center;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.subscribe input {
+    height: 45px;
+    border: none;
+    box-shadow: 5px 5px 5px lightgray;
+    margin-bottom: 5%;
+}
+
+.subscribe .cta-link {
+    height: 45px;
+    background: #354463;
+    color: white;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.subscribe .cta-link:hover {
+    background: gray;
+}
+
+/* Company information setting */
+.company-info {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.company-info a {
+    font-family: "komet", sans-serif;
+    text-decoration: underline;
+}
+
+.quick-links li {
+    margin-bottom: 2%;
+}
+
+/* Homepage video */
+
+.welcome-video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.welcome {
+    text-align: end;
+    margin-bottom: 10%;
+}
+
+/* Rejust all images sixe */
+img {
+    width:100%;
+}
+
+/* Rejust all page content margin */
+.home-content1,
+.home-content2,
+.explore-content1,
+.explore-content2,
+.explore-content3,
+.exhibition-content1,
+.exhibition-content2,
+.exhibition-content3,
+.event-content1,
+.event-content2,
+.event-content3,
+.vist-content1,
+.involved-content1,
+.involved-content2,
+.involved-content2,
+.enroll-content {
+    margin-bottom: 10%;
+}
+
+/* Regust videos size for all pages*/
+.explore-content1-video1,
+.explore-content1-video2,
+.explore-content1-video3,
+.exhibition-content1-video1,
+.exhibition-content2-video2,
+.exhibition-content2-video3,
+iframe,
+.visit-content1-video1,
+.involved-content1-video1,
+.enroll-video1 {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Enrollmentform */
+.enroll-content {
+    background:#354463;
+    color: white;
+    text-align: center;
+}
+
+.enroll-content h2 {
+    padding-top: 5%;
+}
+
+.enroll-content h2,
+.enroll-content h3,
+.entoll-content select {
+    color: white;
+}
+
+.enroll-form {
+    display: grid;
+    margin-left: 3%;
+    margin-right: 3%;
+
+    text-align: left;
+}
+
+.enroll-form input,
+.enroll-form select {
+    height:30px;
+    margin-bottom: 5%;
+    background: #354463;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.enroll-form .submit {
+    width: 120px;
+    height: 40px;
+    padding-bottom:-5%;
+    color: white;
+    text-align: center;
+    background-color: #C24533;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: auto;
+}
+
+.submit:hover {
+    background-color: gray;
+}
+
+
+
+

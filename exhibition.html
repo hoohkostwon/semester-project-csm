@@ -4,41 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/ftu6mxe.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ftu6mxe.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ftu6mxe.css">
     <script src="https://kit.fontawesome.com/a59324db92.js" crossorigin="anonymous"></script>
     <title>CSM | Exhibition </title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <span>Community <br>
-                Science <br>
-                Museum <br>
-            </span>
+    <header class="topnav">
+        <div class="logo-slogan">
+            <div class="logo">
+                <span>Community <br>
+                    Science <br>
+                    Museum <br>
+                </span>
+            </div>
+            <div class="header-slogan">
+                <span># Explore Together</span>
+            </div>
         </div>
-        <div class="header-slogen">
-            <span># Explore Together</span>
-        </div>
-        <div class="mobile-menu">
-            <input type="checkbox" id="side-menu">
+        <input type="checkbox" id="side-menu">
             <label class="hamb" for="side-menu">
                 <span class="hamb-line1"></span>
                 <span class="hamb-line2"></span>
                 <span class="hamb-line3"></span>
             </label>
-        </div>
-        <nav>
-            <ul class="menu-list">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="explore.html" >Explore</a></li>
-                <li><a href="exhibition.html" class="active">Exhibition</a></li>
+        <div class="menu-list">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li><li><a href="explore.html">Explore</a></li>
+                <li><a href="exhibition.html">Exhibition</a></li>
                 <li><a href="event.html">Event</a></li>
                 <li><a href="visit.html">Visit</a></li>
                 <li><a href="involved.html">Involved</a></li>
             </ul>
-        </nav>
+        </div> 
     </header>
     <main>
         <div class="exhibition-content1">
@@ -70,15 +68,13 @@
             </section>
         </div>
         <div class="exhibition-content3">
-            <img src="Image/Rocket.png" alt="Rocekt">
-            <img src="Image/Experience-board.jpg" alt="Experience-board">
-            <video autoplay loop muted src="Video/Volcano.mp4" class="exhibition-content2-video3"></video>
             <section class="exhibition-content3-section1">
                 <h1> Ecology </h1>
                 <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.</p>
                 <p>In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
-                <a href="#" class="page-link2">Read more... </a>
             </section>
+            <img src="Image/Experience-board.jpg" alt="Experience-board">
+            <video autoplay loop muted src="Video/Volcano.mp4" class="exhibition-content2-video3"></video>
         </div>
         <div class="contact">
             <div class="contact-slogan">
@@ -86,7 +82,7 @@
                     Together <br>
                 </span>
             </div>
-            <div class="social media">
+            <div class="socialmedia">
                 <ul>
                     <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-youtube-square"></i></a></li>
