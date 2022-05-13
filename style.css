@@ -626,7 +626,7 @@ iframe,
     .event-content1-section1,
     .event-content2-section1,
     .event-content3-section1 {
-        width: 90%;
+        width: 80%;
         margin-left: 10%;
     }
 
@@ -705,8 +705,9 @@ iframe,
         object-fit: cover;
         height:fit-content;
     }
-
 }
+
+
 
 
 
