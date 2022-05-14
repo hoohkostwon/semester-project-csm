@@ -47,7 +47,7 @@ li {
 body {
     font-family: "komet", sans-serif;
     color: #081E3B;
-    margin: 0 5% 3% 5%;
+    margin: 3% 5%;
 }
 
 h1, 
@@ -205,9 +205,9 @@ p {
 
 #side-menu:checked ~ .menu-list {
     display: block;
-    position: fixed;
     background: white;
     width: 30%;
+    margin-bottom: 10%;
 }
 
 .menu-list li {
@@ -416,7 +416,7 @@ iframe,
         position: fixed;
         right: 0;
         margin-right: 5%;
-        margin-top: 15%;
+        top: 180px;
     }
 
     /* Welcome set*/
@@ -517,8 +517,12 @@ iframe,
         text-shadow: 10px 10px 5px lightgray;
     }
 
+    .menu-list {
+        top: 300px;
+    }
+
     .menu-list li {
-        padding-bottom: 25%;
+        padding-bottom: 15%;
     }
 
     /* Homepage layout */
