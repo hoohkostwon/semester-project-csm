@@ -199,18 +199,20 @@ p {
 
 /* Chekced effect of side menu */
 .menu-list {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width:200px;
+    height: 100%;
+    background-color: white;
+    transition-duration: 0.25s;
+    margin-left: 5%;
+    padding-top: 5%;
 }
 
 #side-menu:checked ~ .menu-list {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background: fixed;
-    background-color: white;
-    width: 180px;
-    height: 100%;
-    margin-left: -1%;
+    left: 0;
 }
 
 .menu-list li {
