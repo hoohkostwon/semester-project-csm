@@ -205,14 +205,14 @@ p {
 #side-menu:checked ~ .menu-list {
     display: flex; 
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     height: 100%;
     background-color: white;
     padding: 5% 8%;
     transition: all 0.4s ease; 
     position: absolute;
     overflow: hidden;
-    top: 140px;
+    top: 120px;
     right: 0;
 }
 
@@ -290,8 +290,7 @@ p {
     margin-bottom: 2%;
 }
 
-/* Homepage video */
-
+/* Homepage */
 .welcome-video {
     width: 100%;
     height: 400px;
@@ -302,6 +301,16 @@ p {
     text-align: end;
     margin-bottom: 10%;
 }
+
+.home-content1-image1 {
+    filter: grayscale(0.5) brightness(80%);
+    transition: 0.3s ease-in-out;
+}
+
+.home-content1-image1:hover {
+    filter: none;
+}
+
 
 /* Rejust all images sixe */
 img {
