@@ -130,6 +130,7 @@ p {
 .page-link1:hover,
 .page-link2:hover {
     color: grey;
+    transition:all 0.3s ease;
 }
 
 /* Style header*/
@@ -221,6 +222,7 @@ p {
 
 .menu-list a:hover {
     color: #C24533;
+    transition: all 0.3s ease;
 }
 
 /* Contact section for mobile */
@@ -263,13 +265,14 @@ p {
     background: #354463;
     color: white;
     box-shadow: 5px 5px 5px lightgray;
-    text-decoration: none;
+    text-decoration: none !important;
     justify-content: center;
     align-items: center;
 }
 
 .subscribe .cta-link:hover {
      background: gray;
+     transition: all 0.3s ease;
 }
 
 /* Company information setting */
@@ -390,6 +393,7 @@ iframe,
 
 .submit:hover {
     background-color: gray;
+    transition: all 0.3s ease;
 }
 
 /* Responsible size: when page over 500 px */
